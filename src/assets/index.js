@@ -30,6 +30,18 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import aarki from "./AARKI.png";
+import furrl from "./furll.png";
+import sharechat from "./ShareChat.png";
+import swiggy_instamart from "./Swiggy_Instamart.png";
+import swiggy_map from "./Swiggy_Map.png";
+import twinmind from "./TwinMind.png";
+
+import axis_my_india from "./Axis my india.png";
+import spinny from "./Spinny.png";
+import swiggy from "./Swiggy.png";
+import spark_foundation from "./The spark Foundation.jpg";
+
 export {
   logo,
   backend,
@@ -59,4 +71,14 @@ export {
   carrent,
   jobit,
   tripguide,
+  aarki,
+  furrl,
+  sharechat,
+  swiggy_instamart,
+  swiggy_map,
+  twinmind,
+  axis_my_india,
+  spinny,
+  swiggy,
+  spark_foundation,
 };

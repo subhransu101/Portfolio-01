@@ -23,12 +23,26 @@ import {
   jobit,
   tripguide,
   threejs,
+  aarki,
+  furrl,
+  sharechat,
+  swiggy_instamart,
+  swiggy_map,
+  twinmind,
+  axis_my_india,
+  spinny,
+  swiggy,
+  spark_foundation,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "projects",
+    title: "Project",
   },
   {
     id: "work",
@@ -42,19 +56,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "🎯 Problem Solver",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "🧪 Experimenter",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "📊 Data Analyst",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "🚀 Product Builder",
     icon: creator,
   },
 ];
@@ -116,55 +130,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Product - Ads & Monetisation",
+    company_name: "Swiggy",
+    icon: swiggy,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Mar 2024 – Present",
+    tags: ["A/B TESTING", "SNOWFLAKE", "POWER BI", "DATABRICKS", "PYTHON", "GOOGLE ANALYTICS"],
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Widgetized post-order trackscreen into a multi-ad platform, increasing ad revenue by 1.5×.",
+      "Built a unified rewards and gamification platform, driving ₹4 Cr monthly revenue and boosting ad engagement.",
+      "Launched immersive full-screen reward ads, increasing CTR by 16% and enabling scalable gamified ad formats.",
+      "Built sponsored cart recommendations using affinity and inventory signals, generating ₹1 Cr+ monthly revenue.",
+      "Launched sponsored menu flash-card ads, influencing purchase decisions and generating nearly ₹3 Cr monthly revenue.",
+      "Built Swiggy Bites, an AI-powered video ad platform transforming storefront images into engaging promotional creatives.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Business Analyst — Central Supply",
+    company_name: "Spinny",
+    icon: spinny,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Feb 2023 – Mar 2024",
+    tags: ["SQL", "PYTHON", "TABLEAU", "AIRFLOW", "KPI TRACKING"],
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Analyzed 2.5M+ records to cut bad procurement from 4.2% to 2.1%, streamlining ground-team reporting.",
+      "Optimized vehicle self-inspection process to 15% procurement rate, reducing rejections to 2% across 4 cities.",
+      "Led A/B testing for inspection app revamp — reduced inspection time from 60 to 40 mins, boosting market penetration by 12%.",
+      "Defined & executed new incentive structure for 709 inspectors nationwide as single SPOC.",
+    ],
+  },
+  {
+    title: "GET - Growth & Strategy",
+    company_name: "Axis My India",
+    icon: axis_my_india,
+    iconBg: "#E6DEDD",
+    date: "Aug 2022 – Feb 2023",
+    tags: ["PYTHON", "EXCEL", "POWER BI", "SQL", "MACHINE LEARNING"],
+    points: [
+      "Drove 10% sales uplift (~INR 40L/year) for Kristal Salt via brand health evaluation across 5 districts (n=8,000).",
+      "Led Phase-1 impact analysis for a media house, studying ward-level data (n=1,600) for campaign effectiveness.",
+      "Extrapolated rural home loan market share with 87% accuracy, influencing 60% business impact for Piramal Finance.",
+    ],
+  },
+  {
+    title: "Data Science & Business Analytics Intern",
+    company_name: "The Spark Foundation",
+    icon: spark_foundation,
+    iconBg: "#E6DEDD",
+    date: "Apr 2021 – May 2021",
+    tags: ["PANDAS", "NUMPY", "MATPLOTLIB", "REGRESSION"],
+    points: [
+      "Completed 5 end-to-end projects in data cleaning, analysis, and ML modeling using Python scientific stack.",
     ],
   },
 ];
@@ -198,68 +214,83 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Swiggy — Map Monetization",
+    description: "Case study on monetizing Swiggy's live-tracking map with a two-phase localized ad model — Radar restaurant discount bubbles and geo-fenced brand ads to drive revenue without degrading core UX.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
+        name: "PRD",
         color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      }
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: swiggy_map,
+    source_code_link: "https://docs.google.com/document/d/1ikP9U2A-HAc4IIsnbWVDps_8O1lO6wyJeRT7yFdfK0c/edit?tab=t.0#heading=h.kumtoky376gv",
+    number: "01"
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Swiggy Instamart",
+    description: "Deep-dive into India's leading quick-commerce platform — analyzing user personas, competitive landscape, revenue model, and growth levers behind their $1B GOV milestone.",
     tags: [
       {
-        name: "react",
+        name: "PRODUCT TEARDOWN",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      }
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: swiggy_instamart,
+    source_code_link: "https://www.notion.so/Product-Teardown-Swiggy-Instamart-204bbb13c5bd80639cb5eeaabe5ef6ca",
+    number: "02"
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "ShareChat — DAU Growth Strategy",
+    description: "Designed SABHA, a live language-first discussion feature to boost DAU through habit formation and gamified participation around culturally relevant events like cricket and festivals.",
     tags: [
       {
-        name: "nextjs",
+        name: "CASE STUDY",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: sharechat,
+    source_code_link: "https://docs.google.com/document/d/1pwsn1GKd4xZFJxCs5vB4Al_bhvGuNwg0PDA5Y7EK72c/edit?tab=t.0#heading=h.p0z7ukqz3m1p",
+    number: "03"
   },
+  {
+    name: "TwinMind",
+    description: "Analysis of an AI-first productivity platform with the world's most accurate speech recognition (94.74%). Explored defensibility, real-time memory systems, and privacy-first design.",
+    tags: [
+      {
+        name: "PRODUCT TEARDOWN",
+        color: "green-text-gradient",
+      }
+    ],
+    image: twinmind,
+    source_code_link: "https://www.notion.so/Product-Teardown-Twin-Mind-2f2bbb13c5bd8186915ce6691c362edb",
+    number: "04"
+  },
+  {
+    name: "Aarki — Lead Quality Analysis",
+    description: "Statistical analysis of lead quality trends, campaign performance, and publisher attribution using z-tests and cohort analysis to inform ad-tech optimization strategies.",
+    tags: [
+      {
+        name: "CASE STUDY",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: aarki,
+    source_code_link: "https://docs.google.com/document/d/1I67VxaNJCykZJhvNO4pnOH6UJHxpc-5aTqYvW_SbqaQ/edit?tab=t.0#heading=h.4r1wykkzkt5l",
+    number: "05"
+  },
+  {
+    name: "Furrl Analytics Dashboard",
+    description: "Interactive Tableau dashboard visualizing key business metrics with drill-down capabilities and real-time data exploration.",
+    tags: [
+      {
+        name: "DASHBOARD",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: furrl,
+    source_code_link: "https://public.tableau.com/app/profile/sudhansu.choudhury/viz/Furrl/Dashboard1",
+    number: "06"
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

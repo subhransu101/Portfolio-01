@@ -40,6 +40,19 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+
+        {experience.tags && (
+          <div className='flex flex-wrap gap-2 mt-3'>
+            {experience.tags.map((tag, idx) => (
+              <span 
+                key={idx} 
+                className='bg-tertiary text-secondary text-[12px] px-2 py-1 rounded-md uppercase font-semibold tracking-wider'
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
